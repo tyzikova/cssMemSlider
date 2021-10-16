@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: #030303e0;
+}
+.slider{
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: 5% auto;
+}
+.slider input[name="slide"]{
+     display: none; 
+}
+.switch{
+    width: 100%;
+    height: 100px;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#btn1:checked ~ .switch .label-cheker label[for="btn1"]{
+    border-color: #348ec6;
+    background: none;
+}
+#btn1:checked ~ .switch .label-cheker label[for="btn1"]:hover,
+#btn2:checked ~ .switch .label-cheker label[for="btn2"]:hover,
+#btn3:checked ~ .switch .label-cheker label[for="btn3"]:hover,
+#btn4:checked ~ .switch .label-cheker label[for="btn4"]:hover{
+    border-color: white;
+}
+#btn2:checked ~ .switch .label-cheker label[for="btn2"]{
+    border-color: #348ec6;
+    background: none;
+} 
+#btn3:checked ~ .switch .label-cheker label[for="btn3"]{
+    border-color: #348ec6;
+    background: none;
+}
+#btn4:checked ~ .switch .label-cheker label[for="btn4"]{
+    border-color: #348ec6;
+    background: none;
+}  
+
+.slider-container{
+    overflow: hidden;   
+    border-radius: 15px;
+}
+.slides{
+    width: 400%;
+    transition: all .55s;
+} 
+.slides > img{
+    width: 25%;
+    height: 850px;
+    float: left;
+} 
+#btn1:checked ~ .slider-container .slides{
+    transform: translate(0);
+}  
+#btn2:checked ~ .slider-container .slides{
+    transform: translate(-25%);
+}
+#btn3:checked ~ .slider-container .slides{
+    transform: translate(-50%);
+}
+#btn4:checked ~ .slider-container .slides{
+    transform: translate(-75%);
+}
+.wrapper{
+    overflow: hidden;
+}
+.text-under-img{
+    width: 400%;
+    transition: all .55s;
+}
+.text-under-img > div{
+    color: white;
+    font-size: 26px;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 5px;
+    width: 25%;
+    float: left;
+}
+#btn1:checked ~ .switch .wrapper .text-under-img{
+    transform: translate(0);
+}  
+#btn2:checked ~ .switch .wrapper .text-under-img{
+    transform: translate(-25%);
+}
+#btn3:checked ~ .switch .wrapper .text-under-img{
+    transform: translate(-50%);
+}
+#btn4:checked ~ .switch .wrapper .text-under-img{
+    transform: translate(-75%);
+}
+.label-cheker{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+}
+.label-cheker > label{
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 15px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #348ec6;
+    background: #348ec6;
+    border-radius: 50%;
+}
+.label-cheker > label:hover{
+    border-color: white;
+    background: white;
+}  
+@media screen and (max-width: 768px){
+.switch{
+    flex-direction: column-reverse;
+    margin-top: 10%;
+    height: 145px;
+}
+.wrapper{
+    margin-top: 5%;
+    text-align: center;
+}
+.slides > img{
+    height: 645px;
+}
+.label-cheker{
+    justify-content: center;
+    margin-top: 0;
+}
+}
+@media screen and (max-width: 620px){
+.slides > img{
+    height: 445px;
+}
+.switch{
+	height: 200px;
+}
+.label-cheker{
+	width: 100%;
+}
+}
