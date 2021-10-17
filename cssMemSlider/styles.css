@@ -8,6 +8,21 @@ html, body{
 body{
     background: #030303e0;
 }
+header{
+    margin: 5% auto;
+    width: 90%;
+}
+h1{
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    color:#ffffff;
+	text-shadow: 0 0 1rem;
+    letter-spacing: 0.2rem;
+    font-weight: inherit;
+}
+main{
+    margin-bottom: 5%;
+}
 .slider{
     position: relative;
     display: flex;
@@ -52,7 +67,7 @@ body{
 
 .slider-container{
     overflow: hidden;   
-    border-radius: 15px;
+    border-radius: 1.5rem;
 }
 .slides, .text-under-img{
     width: 400%;
@@ -80,9 +95,9 @@ body{
 }
 .text-under-img > div{
     color: white;
-    font-size: 26px;
+    font-size: 2rem;
     font-family: 'Abril Fatface', cursive;
-    letter-spacing: 5px;
+    letter-spacing: 0.3rem;
     width: 25%;
     float: left;
 }
@@ -106,10 +121,10 @@ body{
 .label-cheker > label{
     display: inline-block;
     cursor: pointer;
-    margin: 0 15px;
+    margin: 0 1rem;
     width: 20px;
     height: 20px;
-    border: 2px solid #348ec6;
+    border: 0.1rem solid #348ec6;
     background: #348ec6;
     border-radius: 50%;
 }
@@ -123,32 +138,28 @@ footer{
 	justify-content: end;
 	margin: 0 auto;
     padding: 0 3% 2% 0;
-	height: 40px;
+	height: 2.5em;
 	align-items: center;
 }
 .footerLink{
 	color:#ffffff;
 	font-size: xx-small;
-	font-family: Lora, sans-serif;
-	text-shadow: 0 0 15px;
+	font-family: Roboto;
+	text-shadow: 0 0 1rem;
+    letter-spacing: 0.02rem;
 }
 .footerLink a{
 	color:#ffffff;
 	font-weight: 700;
-	font-family: Lora, sans-serif;
-	text-shadow: 0 0 15px;
-	font-size: 14px;
+	font-family: Roboto;
+	text-shadow: 0 0 1rem;
+	font-size: 1rem;
     text-decoration: none;
 }
 .footerLink > i{
-	font-size: 14px;
+	font-size: 1rem;
 	color:#ffffff;
-	text-shadow: 0 0 15px;
-}
-.footerLogo img{
-	width: 50px;
-	height: 50px;
-	padding-top: 5px;
+	text-shadow: 0 0 1rem;
 }
 
 @media screen and (max-width: 768px){
@@ -158,18 +169,21 @@ footer{
     height: 145px;
 }
 .wrapper{
-    margin-top: 5%;
+    margin-top: 4%;
     text-align: center;
 }
 .slides > img{
     height: 645px;
+}
+.text-under-img > div{
+    font-size: 1.3rem;
 }
 .label-cheker{
     justify-content: center;
     margin-top: 0;
 }
 }
-@media screen and (max-width: 620px){
+@media screen and (max-width: 635px){
 .slides > img{
     height: 445px;
 }
@@ -178,5 +192,13 @@ footer{
 }
 .label-cheker{
 	width: 100%;
+}
+h1{
+    font-size: 1.5rem;
+}
+}
+@media screen and (max-width: 510px){
+h1{
+    font-size: 1rem;
 }
 }
