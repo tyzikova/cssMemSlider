@@ -54,7 +54,7 @@ body{
     overflow: hidden;   
     border-radius: 15px;
 }
-.slides{
+.slides, .text-under-img{
     width: 400%;
     transition: all .55s;
 } 
@@ -77,10 +77,6 @@ body{
 }
 .wrapper{
     overflow: hidden;
-}
-.text-under-img{
-    width: 400%;
-    transition: all .55s;
 }
 .text-under-img > div{
     color: white;
@@ -126,6 +122,7 @@ footer{
 	display: flex;
 	justify-content: end;
 	margin: 0 auto;
+    padding: 0 3% 2% 0;
 	height: 40px;
 	align-items: center;
 }
@@ -141,6 +138,7 @@ footer{
 	font-family: Lora, sans-serif;
 	text-shadow: 0 0 15px;
 	font-size: 14px;
+    text-decoration: none;
 }
 .footerLink > i{
 	font-size: 14px;
